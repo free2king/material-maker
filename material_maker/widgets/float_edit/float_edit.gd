@@ -62,7 +62,7 @@ func do_update(update_text : bool = true) -> void:
 		if cursor != null:
 			if max_value != min_value:
 #				cursor.rect_position.x = (clamp(value, min_value, max_value)-min_value)*(slider.rect_size.x-cursor.rect_size.x)/(max_value-min_value)
-				cursor.rect_size.x = (clamp(value, min_value, max_value)-min_value)*slider.rect_size.x/max_value
+				cursor.rect_size.x = (clamp(value, min_value, max_value)-min_value)*slider.rect_size.x/(max_value-min_value)
 			else:
 				cursor.rect_position.x = 0
 
